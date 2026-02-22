@@ -3,12 +3,14 @@
    ========================================= */
 :root {
     /* Brand Colors */
-    --primary-color: #0d3b23; /* Deep, rich forest green */
+    --primary-color: #0d3b23;
+    /* Deep, rich forest green */
     --primary-light: #165c38;
     --primary-dark: #072314;
-    --accent-color: #d4af37; /* Very elegant gold */
+    --accent-color: #d4af37;
+    /* Very elegant gold */
     --accent-light: #ebd683;
-    
+
     /* Neutral Colors */
     --text-dark: #121212;
     --text-muted: #555555;
@@ -16,18 +18,18 @@
     --bg-light: #ffffff;
     --bg-gray: #f8f9fa;
     --border-color: #e0e0e0;
-    
+
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    
+
     /* Glassmorphism & Effects */
     --glass-bg: rgba(255, 255, 255, 0.9);
     --glass-border: rgba(255, 255, 255, 0.2);
-    --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
-    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 20px 40px rgba(13, 59, 35, 0.15);
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -37,7 +39,9 @@
 /* =========================================
    RESET & BASE STYLE
    ========================================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,7 +60,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--primary-color);
     line-height: 1.2;
@@ -132,10 +141,21 @@ ul {
     margin-right: auto;
 }
 
-.mt-3 { margin-top: 1rem; }
-.mt-4 { margin-top: 2rem; }
-.mt-5 { margin-top: 3rem; }
-.w-100 { width: 100%; }
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.w-100 {
+    width: 100%;
+}
 
 /* =========================================
    BUTTONS
@@ -371,7 +391,8 @@ ul {
     background-color: var(--primary-color);
     color: var(--text-light);
     padding: 3rem 0;
-    margin-top: -1px; /* Fix bleeding edges */
+    margin-top: -1px;
+    /* Fix bleeding edges */
 }
 
 .trust-container {
@@ -619,7 +640,8 @@ ul {
     margin-bottom: 0.2rem;
 }
 
-.cm-details p, .cm-details a {
+.cm-details p,
+.cm-details a {
     color: var(--text-muted);
 }
 
@@ -631,7 +653,8 @@ ul {
 }
 
 .social-link-text:hover {
-    color: #0a66c2; /* LinkedIn Blue */
+    color: #0a66c2;
+    /* LinkedIn Blue */
     text-decoration-color: #0a66c2;
 }
 
@@ -659,7 +682,7 @@ ul {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 3rem;
     margin-bottom: 3rem;
 }
@@ -764,16 +787,18 @@ ul {
    RESPONSIVE
    ========================================= */
 @media (max-width: 992px) {
-    .about-grid, .contact-grid {
+
+    .about-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .experience-card {
         bottom: 20px;
         right: 20px;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -781,28 +806,30 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .nav-links, .nav-cta {
+
+    .nav-links,
+    .nav-cta {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: block;
     }
-    
+
     .hero-actions {
         flex-direction: column;
     }
-    
+
     .trust-container {
         flex-direction: column;
         gap: 2rem;
     }
-    
+
     .trust-divider {
         width: 100px;
         height: 1px;
     }
-    
+
     /* Mobile Menu Active State */
     .nav-links.mobile-active {
         display: flex;
@@ -816,7 +843,7 @@ ul {
         gap: 1.5rem;
         box-shadow: var(--shadow-md);
     }
-    
+
     .nav-links.mobile-active a {
         color: var(--text-light) !important;
         font-size: 1.2rem;
